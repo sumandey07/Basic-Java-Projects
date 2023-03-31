@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlack"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfileImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/profile_icon" />
+
+        <TextView
+            android:id="@+id/UserNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="User Name"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MailTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Mail Id"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/TotalWorkingDaysTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Total Working Days"/>
+
+    <TextView
+        android:id="@+id/TotalPresentsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Total Presents Days"/>
+
+    <TextView
+        android:id="@+id/TotalAbsentsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Total Absents Days"/>
+
+
+    <TextView
+        android:id="@+id/AttendancePercentageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Attendence Percentage"/>
+
+
+
+    <Button
+        android:id="@+id/AskPermissionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Ask Permission" />
+
+    <Button
+        android:id="@+id/SignOutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Sign Out" />
+
+
+</LinearLayout>

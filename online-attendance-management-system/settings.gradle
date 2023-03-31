@@ -1,0 +1,2 @@
+rootProject.name = "Online Attendance System"
+include ':app'
