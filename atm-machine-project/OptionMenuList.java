@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class OptionMenuList extends Account {
 	Scanner menuInput = new Scanner(System.in);
-	DecimalFormat moneyFormat = new DecimalFormat("'₹'###,##0.00");
+	DecimalFormat moneyFormat = new DecimalFormat("'$'###,##0.00");
 
 	HashMap<Integer, Integer> user = new HashMap<Integer, Integer>();
 
@@ -31,7 +31,7 @@ public class OptionMenuList extends Account {
 				System.out.println("\n" + "ERROR!!!! Invalid character(s). Enter Only NUMBERS." + "\n");
 				System.out.println("Thank You for using our ATM, Visit Again." + "\n");
 				x = 2;
-				break;
+				System.exit(0);
 			}
 			for (Entry<Integer, Integer> entry : user.entrySet()) {
 				if (entry.getKey() == getCustomerNumber() && entry.getValue() == getPinNumber()) {
@@ -63,7 +63,7 @@ public class OptionMenuList extends Account {
 
 			case 3:
 				System.out.println("Thank You for using our ATM, Visit Again.");
-				break;
+				System.exit(0);
 
 			default:
 				System.out.println("\n" + "Invalid Choice." + "\n");
@@ -104,7 +104,7 @@ public class OptionMenuList extends Account {
 
 			case 5:
 				System.out.println("Thank You for using our ATM, Visit Again.");
-				break;
+				System.exit(0);
 
 			default:
 				System.out.println("\n" + "Invalid choice." + "\n");
@@ -145,7 +145,7 @@ public class OptionMenuList extends Account {
 
 			case 5:
 				System.out.println("Thank You for using our ATM, Visit Again.");
-				break;
+				System.exit(0);
 
 			default:
 				System.out.println("\n" + "Invalid choice." + "\n");
